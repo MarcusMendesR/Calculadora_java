@@ -16,6 +16,10 @@ public class Raiz {
     }
 
     public void calculoRaiz(double num1) {
+        if(num1 < 0){
+            System.out.println("Não existe raiz de numero negativo");
+        }
+        
         try {
             double resultado = Math.sqrt(num1);
             System.out.println("Raiz de " + getNum() + " = " + resultado);
