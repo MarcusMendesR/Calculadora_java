@@ -4,6 +4,7 @@ import java.util.Scanner;
 import Operacoes.Adicao;
 import Operacoes.Divisao;
 import Operacoes.Multiplicacao;
+import Operacoes.Potenciacao;
 import Operacoes.Subtracao;
 
 public class Menu {
@@ -43,6 +44,7 @@ public class Menu {
             System.out.println("2- Subtracao");
             System.out.println("3- Divisao");
             System.out.println("4- multiplicacao");
+            System.out.println("5- Potencia");
             System.out.println("0- sair");
             System.out.println("----------------------");
 
@@ -74,6 +76,9 @@ public class Menu {
                     Multiplicacao multiplica = new Multiplicacao(num1, num2);
                     multiplica.operacaoDivisao(num1, num2);
                     break;
+                case 5:
+                    Potenciacao potencia = new Potenciacao(num1, num2);
+                    potencia.calculoPotencia(num1, num2);
 
                 default:
                     break;
