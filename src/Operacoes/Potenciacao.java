@@ -25,10 +25,11 @@ public class Potenciacao {
         this.num2 = num2;
     }
 
-    public void calculoPotencia(double num1,double num2){
+    public double calculoPotencia(double num1,double num2){
         double resultado;
         resultado = Math.pow(num1, num2);
         System.out.println(getNum1()+ " ^ "+getNum2()+ " = "+resultado);
+        return resultado;
     }
 
 }

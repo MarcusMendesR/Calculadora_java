@@ -25,14 +25,14 @@ public class Divisao {
         this.num2 = num2;
     }
 
-    public void operacaoDivisao(double num1, double num2) {
-        try {
-            double resultado = num1 / num2;
-            System.out.println(+getNum1()+ " / "+ getNum2()+ " = "+resultado);
-            
-        } catch (ArithmeticException e) {
-            System.out.println("Não é possivel dividir por 0.");
-        }
+    public double operacaoDivisao(double num1, double num2) {
+       if(num2 <0){
+        System.out.println("Não é possível dividir por zero.");
+       }
+       double resultado = num1 / num2;
+       System.out.println(getNum1()+ " / " +getNum2()+ " = "+resultado);
+       return resultado;
+        
         
     }
 
