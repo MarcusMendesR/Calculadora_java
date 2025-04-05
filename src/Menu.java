@@ -80,6 +80,7 @@ public class Menu {
             }
         } while (opcao != 0);
         System.out.println("Obrigado por usar a calculadora!");
+        scanner.close();
 
     }
 }
